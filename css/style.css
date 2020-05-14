@@ -1,0 +1,145 @@
+body{ background:#FFF; }
+
+#header-section{
+	background: url(../images/MaskGroup2.png) no-repeat left bottom / 100% 100%;
+	position: relative;
+	overflow: hidden;
+	z-index: 5
+}
+.homeHeader::after{
+	content: "";
+	background:#3a4256;
+	background-image: none;
+	position: absolute;
+	right: 0;
+	top: 0;
+	height:600px;
+	width: 30%;
+	z-index: 9
+}
+.navbar{
+	position: relative;
+	z-index: 99999;
+}
+.nav-item{
+	margin: 0 13px;
+}
+.navbar .nav-link{
+    color: #707070;
+    font-size: 16px;
+	z-index: 99999;
+}
+.homeHeader .navbar .nav-item:nth-last-child(-n+3) .nav-link{
+    color: #FFF;
+}
+.navbar-toggler{
+	border: 1px solid #000;
+}
+.navbar-toggler .navbar-toggler-icon {
+	
+}
+
+h2{
+    font-size: 30px;
+    margin-bottom: 50px;  
+    font-family: 'Open Sans' ;
+}
+a{
+    color:#ffbe23  ;
+}
+
+.headerContent{
+	margin-top: 100px;
+	margin-bottom: 150px;
+	position: relative;
+	z-index: 99
+}
+.headerContent p{
+	color: #b4b4b4;
+}
+
+
+.headerContent h1{
+	font-size: 46px;
+	font-weight: bold;
+}
+.btnColored{
+	 background-image: linear-gradient(to right top, #18d3af, #00d3c1, #00d2d2, #00d1df, #0fcfea);
+	color:#FFF;
+	font-weight: bold;
+	margin: 10px 0;
+}
+
+.blueColor{
+	background: #1cc7c1;
+}
+
+.grayColor{
+	background: #3a4256;
+}
+.contentBody{
+	position: relative;
+	z-index: 9999;
+}
+.contentBody h2{
+	text-align: center;
+	color: #1cc7c1;
+	margin: 50px 0 !important;
+}
+
+.threeBoxes{
+	margin-top: -100px;
+}
+.card-deck .card {
+     box-shadow: 0 0 15px #e5e4e4;
+	margin-bottom: 30px
+}
+.threeBoxes .card-deck .card {
+     border:0;
+     border-radius: 10px;
+	color: #FFF;
+	box-shadow: none;
+}
+
+
+.card-deck h4 {
+     color: #1cc7c1;
+	font-size: 24px;
+}
+.card-deck h5 {
+     font-weight: bold;
+}
+.card-deck .card.content-center{
+    padding: 25px 0;
+}
+
+
+#categories h2{
+    text-align: center;
+}
+#categories h2:after {
+    content: ""; 
+    display: block;
+    margin: 0 auto; 
+    width:120px; 
+    padding-top: 20px; 
+    border-bottom: 8px solid #ffbe23; 
+}
+.cat-thumb img{
+    padding: 20px;
+    box-shadow: 0 0 15px #e5e4e4;
+}
+
+@media screen and (max-width:767px){
+.homeHeader	.navbar .nav-item:nth-last-child(-n+3) .nav-link{
+		color: #707070;
+	}
+	.card-img-top{
+		width: auto
+	}
+	
+    .cat-thumb , .cat-thumb .justify-content-end{
+        text-align: center;
+        justify-content: center !important;
+    }
+}
